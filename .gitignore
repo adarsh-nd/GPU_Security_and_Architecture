@@ -1,0 +1,29 @@
+# ---- compiled binaries (extensionless, built next to their sources) ----
+# ignore everything in the code dirs, then re-include only the source files
+arch/*
+covert/*
+defense/*
+side/*
+timer/*
+!arch/*.cu
+!covert/*.cu
+!defense/*.cu
+!side/*.cu
+!timer/*.cu
+
+# ---- build / tooling artifacts ----
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.nsys-rep
+*.sqlite
+*.ncu-rep
+
+# ---- editor / OS junk ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
